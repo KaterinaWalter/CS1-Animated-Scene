@@ -89,7 +89,39 @@ body {
 @keyframes glowing {
     0% { box-shadow: 0px 0px 0px 0px aqua; }
     40% { box-shadow: 0px 0px 0px 0px aqua; opacity: 0; }
-    44% { box-shadow: 0px 0px 50px 50px aqua; opacity: 1; }
+    44% { box-shadow: 0px 0px 60px 60px aqua; opacity: 1; }
     48% { box-shadow: 0px 0px 0px 0px aqua; opacity: 0; }
     100% { box-shadow: 0px 0px 0px 0px aqua; }
+}
+
+
+/* DEMO for switching image of a div */
+#image-div {
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 20; 
+
+    /* animation: changing-image 5s infinite linear; */
+}
+
+@keyframes changing-image {
+    0% { 
+        background: url('ditto-blue.png');
+        background-size: contain; 
+        background-repeat: no-repeat;
+    }
+    50% { 
+        background: url('ditto-1.png'); 
+        background-size: contain; 
+        background-repeat: no-repeat;
+    }
+    100% { 
+        background: url('ditto-blue.png'); 
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
